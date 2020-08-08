@@ -30,3 +30,5 @@ Example:
 
 
     <?php phpinfo(); ?>
+
+
