@@ -24,12 +24,20 @@
     - arp -a
     - ip neighbour
 * nsloookup
+* whois
+* sublist3r -d [domain]
+
 
 # Network Scanning Tools
 
 1. Nmap 
     * -sn (ping scan)
+    * -sT (TCP connect scan)
     * -sS (SYN only scan, Stealthy)
+    * -iL [fileList]
+    * -Pn (Treat all hosts as online)
+    * -O (OS Detection Enabled)
+    * -sV (Version detection scan)
 
 
-2. 
+2. fping -a -g [IPRANGE] 2>/dev/null > output.txt
