@@ -30,7 +30,9 @@
 
 # Network Scanning Tools
 
-1. Nmap 
+1. fping -a -g [IPRANGE] 2>/dev/null > output.txt
+
+2. Nmap 
     * -sn (ping scan)
     * -sT (TCP connect scan)
     * -sS (SYN only scan, Stealthy)
@@ -39,5 +41,18 @@
     * -O (OS Detection Enabled)
     * -sV (Version detection scan)
 
+# Vulnerability Scanning Tools
 
-2. fping -a -g [IPRANGE] 2>/dev/null > output.txt
+3. Nessus
+
+4. OpenVAS
+
+# Web Application Scanning Tools
+
+5. BurpSuite
+    * java -jar [BurpsuiteOlderVersions.jar] 
+
+6. ZAP 
+    * Use for Spidering Tool
+
+
