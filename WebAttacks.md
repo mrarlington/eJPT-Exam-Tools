@@ -72,13 +72,18 @@
 
     $dirb http://host.com/ /path/to/word.list -X php,txt,bak,old -o output.txt
 
+    $dirb https://host.com/ (Simple SSL test)
+
+*Tips: Searh for **Signup pages** and **old configuration files.***
+
+
 
 
 
 
 -------------------------------------
 
-## Reverse Shell Links
+## *Reverse Shell Links*
 
 [Pentest Monkey Website] (http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 
