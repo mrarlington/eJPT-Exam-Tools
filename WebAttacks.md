@@ -4,7 +4,7 @@
 -------------------------------------
 
 ## *HTTP Protocol and Fingerprinting*
-
+ 
 1. Netcat
     * nc [targetAddress] 80
 
