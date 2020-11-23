@@ -3,4 +3,4 @@
 
 ### By Daniel Arlington
 
-This is a collection of tools and commands to use durong the eJPT Exam.
+This is a collection of tools and commands to use during the eJPT Exam.
